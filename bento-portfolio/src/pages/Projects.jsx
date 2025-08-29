@@ -18,7 +18,7 @@ export default function Projects(){
              </motion.div>
              
              <motion.div className="card4"  whileHover={{scale:1.04}}>
-               <BentoCard title={<TypingAnimation text="Here are some projecs i made..."/>}  />
+               <BentoCard title={<TypingAnimation text="Here are some projects i made..."/>}  />
              </motion.div>
      
              <motion.div className="card5"  whileHover={{scale:1.04}}>
