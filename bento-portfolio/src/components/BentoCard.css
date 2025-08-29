@@ -1,0 +1,13 @@
+/* make the whole bento-card area clickable */
+.bento-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+/* ensure children don't block clicks */
+.bento-card * {
+  pointer-events: none;
+}

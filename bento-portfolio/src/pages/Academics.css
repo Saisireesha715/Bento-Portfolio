@@ -1,0 +1,49 @@
+.academics-cards{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    gap: 30px;
+    height: 100vh;
+    font-family: 'Bangers';
+    font-size: xx-large;
+    color: #fff47e;
+}
+
+@media (max-width: 727px) {
+  .academics-cards {
+    grid-template-columns: 1fr; /* 1 card per row */
+    grid-template-rows: auto;   /* let rows expand naturally */
+  }
+
+  .academics-cards > div {
+    grid-column: auto !important; /* reset forced column spans */
+    grid-row: auto !important;    /* reset forced row spans */
+  }
+}
+
+
+.academics-cards .card1{
+   padding: 20px;
+   grid-column:1/2;
+   grid-row: 1/2;
+   background-color:#f296c0;
+
+}
+
+.academics-cards .card2{
+    padding: 20px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: #4b88df;
+   
+}
+
+.academics-cards .card3{
+    padding: 20px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color:#c399f8;
+    
+}

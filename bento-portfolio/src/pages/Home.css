@@ -1,0 +1,168 @@
+.row-cards {
+  display: grid;
+  color: white;
+  text-shadow: #d0d9a8;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 200px 1fr 1fr; 
+  gap: 10px;
+  height: 100vh;
+}
+
+@media (max-width: 890px) {
+  .row-cards {
+    grid-template-columns: 1fr; /* 1 card per row */
+    grid-template-rows: auto;   /* let rows expand naturally */
+  }
+
+  .row-cards > div {
+    grid-column: auto !important; /* reset forced column spans */
+    grid-row: auto !important;    /* reset forced row spans */
+  }
+}
+
+.row-cards .card1 {
+  
+  grid-column: 1 / 3; 
+  grid-row: 1 / 2;
+
+  background-color: #f64b06 ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.row-cards .card2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  background-color: #aec8a4;
+  background-color:#4e8dff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.row-cards .card3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background-color: #2cb46c; 
+ 
+
+  background-image: url("/vecteezy_freelance-png-graphic-clipart-design_23623194.png");
+  background-repeat: no-repeat;
+  background-size: 220px; 
+  background-position: 30px bottom;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Row 2 */
+.row-cards .card4 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background-color:
+#fbcb44;
+padding: 30px;
+text-align: center;
+font-family: 'Press Start 2P';
+color: purple;
+font-size: 1.2rem;
+cursor: pointer;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease;
+}
+
+.row-cards .card4 .bento-card .card-text{
+  background-color: black;
+  border-radius: 10px;
+}
+.row-cards .card5 {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  background-color: #8a784e;
+  background-color: #c498fa;
+  cursor: pointer;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease;
+}
+
+/* Row 3 */
+.row-cards .card6 {
+  display: flex;
+
+  grid-column: 2 / 4; /* spans 2 columns */
+  grid-row: 3 / 4;
+  background-color: #3b3b1a;
+  background-color: #f64b06 ;
+  /* border-radius: 20px;  */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.row-cards .card7{
+  grid-column: 4/5; /* spans 2 columns */
+  grid-row: 3 / 4;
+  padding: 30px;
+  background-color: #2cb46c; 
+  background-image: url('/vecteezy_abstract-star-shape-retro-style-80s-90s_8507491 (1).png');
+  background-repeat: no-repeat;
+  background-size: contain;
+    background-position: 40px center;
+    cursor: pointer;
+  /* border-radius: 20px;  */
+  transition: all 0.3s ease;
+}
+
+
+
+/* individual cards css */
+
+.row-cards .card1 .bento-card .card-text{
+  text-align: center;
+  padding: 3px;
+  font-family: 'honk';
+  font-size: 4rem;
+}
+
+.row-cards .card5 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  font-family: 'honk';
+  font-size: xxx-large;
+}
+
+.row-cards .card2 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-family: 'Climate Crisis';
+  font-size: 3rem;
+}
+
+.row-cards .card6 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  color: black;
+  font-family: 'Climate Crisis';
+  font-size: 3rem;
+}
+
+
+.row-cards .card3 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-family: 'Bangers',cursive;
+  font-size: 4rem;
+  
+}
+
+/* .card3 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-family: 'Climate Crisis';
+  font-size: 3rem;
+} */
+

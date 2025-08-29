@@ -1,0 +1,27 @@
+.Experience-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+.Experience-container .card1{
+     grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #8a784e;
+  background-color: #c498fa;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease;
+}
+
+.Experience-container .card1 .bento-card .card-text{
+    font-family: 'honk';
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Experience-container .card1 .bento-card .experience-details{
+    font-family: 'Bangers';
+    color: white;
+    font-size: 2rem;
+}

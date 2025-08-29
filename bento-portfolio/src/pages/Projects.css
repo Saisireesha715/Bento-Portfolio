@@ -1,0 +1,161 @@
+.project-cards {
+  display: grid;
+  color: white;
+  text-shadow: #d0d9a8;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 columns */
+  grid-template-rows: 200px 1fr 1fr;  /* 3 rows */
+  gap: 10px;
+  height: 100vh; /* take full screen */
+}
+
+@media (max-width: 890px) {
+  .project-cards {
+    grid-template-columns: 1fr; /* 1 card per row */
+    grid-template-rows: auto;   /* let rows expand naturally */
+  }
+
+  .project-cards > div {
+    grid-column: auto !important; /* reset forced column spans */
+    grid-row: auto !important;    /* reset forced row spans */
+  }
+}
+
+/* Row 1 */
+.project-cards .card1 {
+  
+  grid-column: 1 / 3; /* spans 2 columns (big one) */
+  grid-row: 1 / 2;
+  /* background-color: #8a784e; */
+  background-color:  #2cb46c;  ;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease;
+}
+
+
+
+.project-cards .card2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  background-color: #aec8a4;
+  background-color:#4e8dff;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease;
+}
+
+/* Tall card (row2+row3) */
+.project-cards .card3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4; /* spans Row 2 + Row 3 */
+  background-color: #c498fa;
+  /* border-radius: 20px; */
+
+
+
+  transition: all 0.3s ease;
+}
+
+/* Row 2 */
+.project-cards .card4 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background-color:
+#fbcb44;
+padding: 30px;
+text-align: center;
+font-family: 'Press Start 2P';
+color: purple;
+font-size: 1.2rem;
+
+  /* border-radius: 20px; */
+  transition: all 0.3s ease;
+}
+
+.project-cards .card4 .bento-card .card-text{
+  background-color: black;
+  border-radius: 10px;
+}
+
+.project-cards .card5 {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  background-color: #8a784e;
+  background-color: #c498fa;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease;
+}
+
+/* Row 3 */
+.project-cards .card6 {
+  display: flex;
+
+  grid-column: 2 / 4; /* spans 2 columns */
+  grid-row: 3 / 4;
+  background-color: #3b3b1a;
+  background-color:  #4b88df ;
+  /* border-radius: 20px;  */
+  transition: all 0.3s ease;
+}
+
+
+.project-cards .card7{
+  grid-column: 4/5; /* spans 2 columns */
+  grid-row: 3 / 4;
+  padding: 30px;
+  background-color: #f296c0; 
+ 
+
+  transition: all 0.3s ease;
+}
+
+
+.project-cards .card1 .bento-card .card-text{
+  text-align: center;
+  padding: 3px;
+  font-family: 'Climate Crisis';
+  font-size: 2rem;
+  color: black;
+}
+
+.project-cards .card5 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  font-family: 'bangers';
+  color: gold;
+  font-size: xxx-large;
+}
+
+.project-cards .card2 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-family: 'Climate Crisis';
+  font-size: 3rem;
+}
+
+.project-cards .card6 .bento-card .card-text{
+  text-align: center;
+  padding: 50px;
+  color: black;
+  font-family:'bangers';
+  color: gold;
+  font-size: 3rem;
+}
+
+
+.project-cards .card3 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-family: 'honk',cursive;
+  font-size: 4rem;
+  
+}
+
+.project-cards .card7 .bento-card .card-text{
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-family: 'honk',cursive;
+  font-size: 2rem;
+  
+}
